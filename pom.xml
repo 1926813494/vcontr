@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yaoxun</groupId>
   <artifactId>vcontr</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>2018031901</version>
   <packaging>war</packaging>
   <description>版本号练习</description>
 </project>
