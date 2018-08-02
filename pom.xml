@@ -12,5 +12,42 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>3.5.7</version>
+		</dependency>
+
 	</dependencies>
+
+	<scm>
+		<connection>scm:git@github.com:1926813494/vcontr.git</connection>
+		<developerConnection>scm:git@github.com:1926813494/vcontr.git</developerConnection>
+	</scm>
+
+	<properties>
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+		<my.timestamp>${maven.build.timestamp}</my.timestamp>
+	</properties>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<tagBase>git@github.com:1926813494/vcontr.git</tagBase>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
